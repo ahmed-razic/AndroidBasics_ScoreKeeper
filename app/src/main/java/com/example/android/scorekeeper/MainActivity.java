@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addPenaltyGoalTeamA(View v) {
-        scoreTeamA = scoreTeamA + 1;
+        scoreTeamA = scoreTeamA + 2;
         displayGoalsTeamA(scoreTeamA);
     }
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addPenaltyGoalTeamB(View v) {
-        scoreTeamB = scoreTeamB +1;
+        scoreTeamB = scoreTeamB + 2;
         displayGoalsTeamB(scoreTeamB);
     }
 

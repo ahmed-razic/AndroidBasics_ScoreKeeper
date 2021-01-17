@@ -15,7 +15,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/handball"
-        android:textColor="#673AB7"
+        android:textColor="#000000"
         android:textSize="36sp" />
 
     <LinearLayout
@@ -37,9 +37,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:text="@string/team_a"
-                android:textColor="#673AB7"
+                android:textColor="#616161"
                 android:textSize="18sp" />
 
             <TextView
@@ -47,21 +48,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:textColor="#000000"
-                android:textSize="36sp"
+                android:textSize="56sp"
                 tools:text="0" />
 
             <TextView
                 android:id="@+id/score_red_card_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
                 android:layout_marginBottom="40dp"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:textColor="#FA0000"
-                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
                 tools:text="0" />
 
             <Button
@@ -71,7 +76,8 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 android:onClick="addGoalTeamA"
-                android:text="@string/goal_a" />
+                android:text="@string/goal_1pt_a"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button2"
@@ -80,7 +86,8 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 android:onClick="addPenaltyGoalTeamA"
-                android:text="@string/penalty_goal_a" />
+                android:text="@string/penalty_2pts_a"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button3"
@@ -97,11 +104,12 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="#676060" />
+            android:layout_marginBottom="20dp"
+            android:background="#434040" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -112,8 +120,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="@string/team_b"
-                android:textColor="#673AB7"
+                android:textColor="#616161"
                 android:textSize="18sp" />
 
             <TextView
@@ -121,19 +130,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif-light"
                 android:textColor="#000000"
-                android:textSize="36sp"
+                android:textSize="56sp"
                 tools:text="0" />
 
             <TextView
                 android:id="@+id/score_red_card_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
                 android:layout_marginBottom="40dp"
-                android:textColor="#FA0000"
-                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
                 tools:text="0" />
 
             <Button
@@ -143,7 +156,8 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 android:onClick="addGoalTeamB"
-                android:text="@string/goal_b" />
+                android:text="@string/goal_1pt_b"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button5"
@@ -152,7 +166,8 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 android:onClick="addPenaltyGoalTeamB"
-                android:text="@string/penalty_goal_b" />
+                android:text="@string/penalty_2pts_b"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button6"
@@ -174,7 +189,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="resetScore"
         android:text="@string/reset_score"
-        android:translationY="-20dp" />
+        android:translationY="-30dp" />
 
 
 </RelativeLayout>
