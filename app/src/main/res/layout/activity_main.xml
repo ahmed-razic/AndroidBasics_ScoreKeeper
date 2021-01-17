@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -51,44 +49,47 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="@string/_0"
                 android:textColor="#000000"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                tools:text="0" />
 
             <TextView
-                android:id="@+id/red_card_a"
+                android:id="@+id/score_red_card_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
                 android:gravity="center"
-                android:text="@string/_0"
                 android:textColor="#FA0000"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:text="0" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/goal" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addGoalTeamA"
+                android:text="@string/goal_a" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/penalty_goal" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addPenaltyGoalTeamA"
+                android:text="@string/penalty_goal_a" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/red_card" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addRedCardTeamA"
+                android:text="@string/red_card_a" />
 
         </LinearLayout>
 
@@ -121,54 +122,59 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:text="@string/_0"
                 android:textColor="#000000"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                tools:text="0" />
 
             <TextView
-                android:id="@+id/red_card_b"
+                android:id="@+id/score_red_card_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
-                android:text="@string/_0"
                 android:textColor="#FA0000"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:text="0" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/goal" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addGoalTeamB"
+                android:text="@string/goal_b" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/penalty_goal" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addPenaltyGoalTeamB"
+                android:text="@string/penalty_goal_b" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="@string/red_card" />
+                android:layout_marginBottom="30dp"
+                android:onClick="addRedCardTeamB"
+                android:text="@string/red_card_b" />
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/reset"
-        android:translationY="-40dp" />
+        android:onClick="resetScore"
+        android:text="@string/reset_score"
+        android:translationY="-20dp" />
+
 
 </RelativeLayout>
