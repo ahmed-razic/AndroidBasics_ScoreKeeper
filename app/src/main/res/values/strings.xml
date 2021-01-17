@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="handball">HANDBALL</string>
+    <string name="team_a">Team A</string>
+    <string name="_0">0</string>
+    <string name="_0">0</string>
+    <string name="goal">Goal</string>
+    <string name="penalty_goal">Penalty Goal</string>
+    <string name="red_card">Red Card</string>
+    <string name="team_b">Team B</string>
+    <string name="_0">0</string>
+    <string name="_0">0</string>
+    <string name="red_card">Red Card</string>
+    <string name="reset">Reset</string>
+    <string name="penalty_goal">Penalty Goal</string>
+    <string name="goal">Goal</string>
+</resources>
